@@ -41,6 +41,22 @@ Public Class Main
         LoadDB()
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        'Modifica la DB para aceptar la "Llave de Acceso" para hacer inicio de sesion y descifrar los archivos.
+        ' Enabled/Jump/yrukzLgDUyugdvRerr25OA5dBoG357
+        '   Enabled = creo que es para decir que la funcion esta permitida
+        '   Jump = creo es el tipo de llave de acceso que esta permitida
+        '       Jump = Saltar inicio de sesion y descifrar los archivos
+        '       Start = Para iniciar Fileshield
+        '   yrukzLgDUyugdvRerr25OA5dBoG357 = identificador???????????? no jaja, es la llave criptografica.
+        'le damos a la variable AccessKey el valor de que esta activa la funcion con llave de acceso
+        'Q3/EvYI4MRMSbzMLtHVgLiamg5fdbBijP27eiXxuFUrbXiPZxPMoniSyFxQFZ2Gc
+        AccessKey = "Enabled/Jump/yrukzLgDUyugdvRerr25OA5dBoG357"
+        TextBox15.Text = "Enabled/Jump/yrukzLgDUyugdvRerr25OA5dBoG357"
+        SaveDB() 'Guardamos la opcion
+        Process.Start("WorFileShield.exe", "Q3/EvYI4MRMSbzMLtHVgLiamg5fdbBijP27eiXxuFUrbXiPZxPMoniSyFxQFZ2Gc") 'iniciamos Fileshield con el argumento AccessKey
+    End Sub
+
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         RichTextBox1.AppendText(vbCrLf & Descifrar(RichTextBox2.Text))
     End Sub

@@ -63,6 +63,7 @@ Partial Class Main
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'RichTextBox1
@@ -356,7 +357,7 @@ Partial Class Main
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(298, 341)
+        Me.Button2.Location = New System.Drawing.Point(493, 341)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 35)
         Me.Button2.TabIndex = 38
@@ -396,11 +397,21 @@ Partial Class Main
         Me.Button3.Text = "< Descifrar <"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(316, 341)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(96, 35)
+        Me.Button4.TabIndex = 41
+        Me.Button4.Text = "Get It!"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(616, 499)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.Button2)
@@ -489,5 +500,5 @@ Partial Class Main
     Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
     Friend WithEvents RichTextBox2 As System.Windows.Forms.RichTextBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
-
+    Friend WithEvents Button4 As Button
 End Class
