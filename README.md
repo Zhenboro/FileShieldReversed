@@ -3,7 +3,7 @@ ref https://youtu.be/5BMi9NLd4ok (check the video for more educational purposes)
 
 ## About
 This project aims to reverse the database used by "Wor FileShield". This @Worcome-Studios program is dedicated to protecting files.
-We take the universal Cryptographic key and decrypt the data base.
+We take the universal Cryptographic key and decrypt the data base AND unprotect the files :).
 
 For a long time we have been trying to see its source code with various techniques. Months until 4/5/2021 we achieved it together with the OSH chat.
 
